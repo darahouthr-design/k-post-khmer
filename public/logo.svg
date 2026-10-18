@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="pinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0052A5" />
+      <stop offset="60%" stop-color="#003776" />
+      <stop offset="100%" stop-color="#002352" />
+    </linearGradient>
+    <linearGradient id="blueArcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC" />
+      <stop offset="100%" stop-color="#003776" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0141E" />
+      <stop offset="100%" stop-color="#C80815" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded White Background for Browser Tab Contrast -->
+  <rect width="512" height="512" rx="112" fill="#FFFFFF" />
+
+  <!-- Outer Sweeping Red Arc (Top Right) -->
+  <path
+    d="M 235 64 C 355 52, 446 135, 434 252 C 428 210, 396 146, 336 108 C 298 84, 266 72, 235 64 Z"
+    fill="url(#redGrad)"
+  />
+
+  <!-- Outer Sweeping Blue Arc (Left) -->
+  <path
+    d="M 102 182 C 62 248, 76 332, 134 378 C 106 332, 102 268, 126 206 Z"
+    fill="url(#blueArcGrad)"
+  />
+
+  <!-- Taegeuk Symbol (Top Left) -->
+  <g transform="translate(152, 114) rotate(-32)">
+    <!-- Red Upper Half -->
+    <path
+      d="M -36 0 A 36 36 0 0 1 36 0 A 18 18 0 0 1 0 0 A 18 18 0 0 0 -36 0 Z"
+      fill="#E60012"
+    />
+    <!-- Blue Lower Half -->
+    <path
+      d="M -36 0 A 18 18 0 0 1 0 0 A 18 18 0 0 0 36 0 A 36 36 0 0 1 -36 0 Z"
+      fill="#00479D"
+    />
+  </g>
+
+  <!-- Trigrams (Geon, Gam, Gon) around Taegeuk -->
+  <!-- Left Trigram (3 solid bars) -->
+  <g transform="translate(104, 102) rotate(-58)" fill="#0F172A">
+    <rect x="-18" y="-14" width="36" height="5.5" rx="1.5" />
+    <rect x="-18" y="-5" width="36" height="5.5" rx="1.5" />
+    <rect x="-18" y="4" width="36" height="5.5" rx="1.5" />
+  </g>
+
+  <!-- Top-Right Trigram -->
+  <g transform="translate(198, 56) rotate(36)" fill="#0F172A">
+    <rect x="-18" y="-14" width="16" height="5.5" rx="1.5" />
+    <rect x="2" y="-14" width="16" height="5.5" rx="1.5" />
+    <rect x="-18" y="-5" width="36" height="5.5" rx="1.5" />
+    <rect x="-18" y="4" width="16" height="5.5" rx="1.5" />
+    <rect x="2" y="4" width="16" height="5.5" rx="1.5" />
+  </g>
+
+  <!-- Bottom-Left Trigram -->
+  <g transform="translate(114, 174) rotate(40)" fill="#0F172A">
+    <rect x="-18" y="-12" width="36" height="5.5" rx="1.5" />
+    <rect x="-18" y="-3" width="16" height="5.5" rx="1.5" />
+    <rect x="2" y="-3" width="16" height="5.5" rx="1.5" />
+    <rect x="-18" y="6" width="36" height="5.5" rx="1.5" />
+  </g>
+
+  <!-- Main Blue Location Pin -->
+  <path
+    d="M 256 98 C 166 98, 94 170, 94 258 C 94 348, 212 438, 246 464 C 252 469, 260 469, 266 464 C 300 438, 418 348, 418 258 C 418 170, 346 98, 256 98 Z"
+    fill="url(#pinGrad)"
+  />
+
+  <!-- White Inner Circle inside Main Pin -->
+  <circle cx="256" cy="256" r="126" fill="#FFFFFF" />
+
+  <!-- House Roof & Chimney inside Circle -->
+  <path
+    d="M 156 236 L 256 162 L 310 202 L 310 176 L 332 176 L 332 218 L 356 236"
+    fill="none"
+    stroke="#003776"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- House Side Walls -->
+  <path
+    d="M 174 230 L 174 326 M 338 230 L 338 286"
+    fill="none"
+    stroke="#003776"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+
+  <!-- 12345 Postal Code Badge -->
+  <rect x="192" y="220" width="68" height="28" rx="7" fill="#002E66" />
+  <text
+    x="226"
+    y="240"
+    font-family="JetBrains Mono, Arial, sans-serif"
+    font-size="17"
+    font-weight="800"
+    fill="#FFFFFF"
+    text-anchor="middle"
+  >
+    12345
+  </text>
+
+  <!-- Address Lines -->
+  <rect x="268" y="226" width="54" height="14" rx="7" fill="#94A3B8" />
+  <rect x="192" y="258" width="130" height="14" rx="7" fill="#94A3B8" />
+  <rect x="192" y="282" width="112" height="14" rx="7" fill="#CBD5E1" />
+
+  <!-- Red Korea Post Envelope -->
+  <rect x="192" y="306" width="128" height="74" rx="10" fill="url(#redGrad)" />
+  <path
+    d="M 198 314 L 256 352 L 314 314"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Secondary Red Location Pin (Bottom Right) -->
+  <ellipse cx="386" cy="410" rx="46" ry="14" fill="#003776" stroke="#FFFFFF" stroke-width="4" />
+  <ellipse cx="386" cy="410" rx="22" ry="6" fill="#FFFFFF" />
+  <path
+    d="M 386 274 C 352 274, 326 300, 326 332 C 326 368, 372 402, 382 410 C 385 412, 387 412, 390 410 C 400 402, 446 368, 446 332 C 446 300, 420 274, 386 274 Z"
+    fill="url(#redGrad)"
+    stroke="#FFFFFF"
+    stroke-width="6"
+  />
+  <circle cx="386" cy="330" r="20" fill="#FFFFFF" />
+</svg>

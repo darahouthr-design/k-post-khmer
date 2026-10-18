@@ -1,0 +1,411 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200">
+  <defs>
+    <!-- Wall & Daylight Gradients -->
+    <linearGradient id="wallBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECEAE4" />
+      <stop offset="55%" stop-color="#E4E1DA" />
+      <stop offset="100%" stop-color="#D5D1C8" />
+    </linearGradient>
+    <linearGradient id="windowGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DCEBFA" />
+      <stop offset="50%" stop-color="#EEF5FC" />
+      <stop offset="100%" stop-color="#D7EBD2" />
+    </linearGradient>
+
+    <!-- Wood Gradients -->
+    <linearGradient id="credenzaWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A2E1B" />
+      <stop offset="50%" stop-color="#3A2213" />
+      <stop offset="100%" stop-color="#26150B" />
+    </linearGradient>
+    <linearGradient id="deskSurface" x1="0%" y1="0%" x2="30%" y2="100%">
+      <stop offset="0%" stop-color="#6A4429" />
+      <stop offset="35%" stop-color="#53331D" />
+      <stop offset="75%" stop-color="#3E2413" />
+      <stop offset="100%" stop-color="#28160B" />
+    </linearGradient>
+    <linearGradient id="deskReflection" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8C6240" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#3E2413" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- AC Unit Gradients -->
+    <linearGradient id="acBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F7F5" />
+      <stop offset="75%" stop-color="#EAE8E3" />
+      <stop offset="100%" stop-color="#D6D3CD" />
+    </linearGradient>
+
+    <!-- Developer Skin & Clothing Gradients -->
+    <radialGradient id="faceSkin" cx="48%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#E4AC86" />
+      <stop offset="55%" stop-color="#D4966E" />
+      <stop offset="85%" stop-color="#C07E56" />
+      <stop offset="100%" stop-color="#AD6B44" />
+    </radialGradient>
+    <linearGradient id="neckSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C98860" />
+      <stop offset="50%" stop-color="#BA7952" />
+      <stop offset="100%" stop-color="#A3643F" />
+    </linearGradient>
+    <linearGradient id="poloFabric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A8ACB2" />
+      <stop offset="45%" stop-color="#9499A0" />
+      <stop offset="80%" stop-color="#81868E" />
+      <stop offset="100%" stop-color="#6F747C" />
+    </linearGradient>
+    <linearGradient id="poloCollarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B2B6BC" />
+      <stop offset="100%" stop-color="#858A92" />
+    </linearGradient>
+
+    <!-- Glasses Anti-Glare Blue-Violet Reflection -->
+    <linearGradient id="lensGlareLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.32" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="lensGlareRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5B4FC" stop-opacity="0.48" />
+      <stop offset="55%" stop-color="#6366F1" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#E0E7FF" stop-opacity="0.08" />
+    </linearGradient>
+
+    <!-- Laptop Brushed Metal -->
+    <linearGradient id="acerLid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#82858C" />
+      <stop offset="45%" stop-color="#6E7178" />
+      <stop offset="100%" stop-color="#585B62" />
+    </linearGradient>
+
+    <!-- Soft Realistic Drop Shadows -->
+    <filter id="dropShadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0F141C" flood-opacity="0.22" />
+    </filter>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" />
+    </filter>
+  </defs>
+
+  <!-- 1. Office Wall Background -->
+  <rect width="900" height="1200" fill="url(#wallBg)" />
+
+  <!-- Soft Wall Shadow Cast by Right Plant & AC -->
+  <g opacity="0.12" filter="url(#softBlur)" fill="#2B2927">
+    <ellipse cx="710" cy="390" rx="85" ry="120" />
+    <ellipse cx="650" cy="350" rx="45" ry="70" />
+    <ellipse cx="770" cy="310" rx="60" ry="95" />
+  </g>
+
+  <!-- 2. Left Office Window with High-Rise Building & Daylight Trees -->
+  <g>
+    <!-- Window Recess Wall -->
+    <polygon points="0,0 135,0 135,665 0,685" fill="#D5D2CA" />
+    <!-- Outer Black Aluminum Frame -->
+    <polygon points="0,0 118,0 118,655 0,675" fill="#181B20" />
+    <!-- Window Glass Pane -->
+    <polygon points="0,0 96,0 96,635 0,652" fill="url(#windowGlass)" />
+    <!-- Distant High-Rise Building -->
+    <rect x="0" y="20" width="68" height="330" fill="#CFD8E3" />
+    <g fill="#64748B" opacity="0.55">
+      <rect x="6" y="45" width="18" height="24" />
+      <rect x="32" y="45" width="18" height="24" />
+      <rect x="6" y="85" width="18" height="24" />
+      <rect x="32" y="85" width="18" height="24" />
+      <rect x="6" y="125" width="18" height="24" />
+      <rect x="32" y="125" width="18" height="24" />
+      <rect x="6" y="165" width="18" height="24" />
+      <rect x="32" y="165" width="18" height="24" />
+      <rect x="6" y="205" width="18" height="24" />
+      <rect x="32" y="205" width="18" height="24" />
+      <rect x="6" y="245" width="18" height="24" />
+      <rect x="32" y="245" width="18" height="24" />
+    </g>
+    <!-- Sunlit Green Foliage Outside Window -->
+    <circle cx="35" cy="430" r="65" fill="#689F38" />
+    <circle cx="65" cy="490" r="55" fill="#8BC34A" />
+    <circle cx="20" cy="540" r="68" fill="#558B2F" />
+    <circle cx="55" cy="595" r="50" fill="#7CB342" />
+    <!-- Window Sill & Inner Frame Bar -->
+    <line x1="96" y1="0" x2="96" y2="640" stroke="#262930" stroke-width="6" />
+    <polygon points="0,650 118,632 135,642 0,668" fill="#22252C" />
+  </g>
+
+  <!-- 3. Top Wall-Mounted Panasonic Air Conditioner -->
+  <g filter="url(#dropShadow)">
+    <path d="M238,0 L744,0 L744,96 Q744,132 712,136 L268,136 Q238,132 238,96 Z" fill="url(#acBody)" stroke="#CECBC4" stroke-width="1.5" />
+    <!-- Upper Seam Line -->
+    <line x1="244" y1="54" x2="738" y2="54" stroke="#BCB8B0" stroke-width="1.5" />
+    <!-- Panasonic Brand Text -->
+    <text x="258" y="42" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569" letter-spacing="0.4">Panasonic</text>
+    <!-- Dark Open Air Vent Slot -->
+    <path d="M252,66 L728,66 L718,118 L262,118 Z" fill="#1E2229" />
+    <!-- Dual White Louver Flaps & Center Support -->
+    <rect x="256" y="72" width="464" height="12" rx="2" fill="#E5E4E0" />
+    <rect x="262" y="96" width="452" height="10" rx="2" fill="#CFCECA" />
+    <rect x="484" y="66" width="14" height="52" fill="#C7C5C0" />
+    <!-- Right Status Indicator Lines -->
+    <rect x="716" y="76" width="12" height="3" rx="1" fill="#94A3B8" />
+    <rect x="716" y="84" width="12" height="3" rx="1" fill="#94A3B8" />
+  </g>
+
+  <!-- 4. Background Dark Walnut Credenza Cabinet -->
+  <g filter="url(#dropShadow)">
+    <rect x="142" y="576" width="758" height="220" fill="url(#credenzaWood)" />
+    <!-- Top Bevel Edge -->
+    <rect x="142" y="576" width="758" height="10" fill="#5D3A22" />
+    <!-- Cabinet Door Seams -->
+    <line x1="158" y1="586" x2="158" y2="796" stroke="#1E1008" stroke-width="2.5" />
+    <line x1="335" y1="586" x2="335" y2="796" stroke="#1E1008" stroke-width="3" />
+    <line x1="650" y1="586" x2="650" y2="796" stroke="#1E1008" stroke-width="3" />
+    <line x1="850" y1="586" x2="850" y2="796" stroke="#1E1008" stroke-width="3" />
+  </g>
+
+  <!-- 5. Small Potted Plant & 4 Blue Ring Binders on Left of Credenza -->
+  <g filter="url(#dropShadow)">
+    <!-- Small Grey Potted Plant -->
+    <polygon points="174,528 214,528 208,576 180,576" fill="#8D9196" />
+    <path d="M194,530 C178,505 170,492 178,478 C184,495 190,508 194,528 Z" fill="#2E6B27" />
+    <path d="M194,530 C188,498 192,475 196,465 C200,482 200,505 196,528 Z" fill="#3E8235" />
+    <path d="M194,530 C204,502 216,492 214,478 C206,490 198,505 194,528 Z" fill="#25581F" />
+
+    <!-- 4 Blue Office Ring Binders -->
+    <!-- Binder 1 -->
+    <rect x="236" y="408" width="30" height="168" rx="3" fill="#1D4E89" stroke="#102A4C" stroke-width="1.5" />
+    <rect x="241" y="422" width="20" height="68" rx="1.5" fill="#F1F5F9" />
+    <circle cx="251" cy="534" r="7" fill="#CBD5E1" />
+    <circle cx="251" cy="534" r="4" fill="#1E293B" />
+
+    <!-- Binder 2 -->
+    <rect x="267" y="408" width="30" height="168" rx="3" fill="#215BA0" stroke="#102A4C" stroke-width="1.5" />
+    <rect x="272" y="422" width="20" height="68" rx="1.5" fill="#F1F5F9" />
+    <circle cx="282" cy="534" r="7" fill="#CBD5E1" />
+    <circle cx="282" cy="534" r="4" fill="#1E293B" />
+
+    <!-- Binder 3 -->
+    <rect x="298" y="408" width="30" height="168" rx="3" fill="#1E5291" stroke="#102A4C" stroke-width="1.5" />
+    <rect x="303" y="422" width="20" height="68" rx="1.5" fill="#F1F5F9" />
+    <circle cx="313" cy="534" r="7" fill="#CBD5E1" />
+    <circle cx="313" cy="534" r="4" fill="#1E293B" />
+
+    <!-- Binder 4 (with side depth) -->
+    <rect x="329" y="408" width="30" height="168" rx="3" fill="#1A467D" stroke="#102A4C" stroke-width="1.5" />
+    <polygon points="359,408 376,418 376,576 359,576" fill="#133158" />
+    <rect x="334" y="422" width="20" height="68" rx="1.5" fill="#F1F5F9" />
+    <circle cx="344" cy="534" r="7" fill="#CBD5E1" />
+    <circle cx="344" cy="534" r="4" fill="#1E293B" />
+  </g>
+
+  <!-- 6. Right Credenza Lush Green Ficus Plant in White Cylindrical Pot -->
+  <g filter="url(#dropShadow)">
+    <!-- White Planter Pot -->
+    <path d="M778,468 L882,468 L874,578 L786,578 Z" fill="#EAECEF" stroke="#D0D5DD" stroke-width="1.5" />
+    <!-- Woody Stems -->
+    <path d="M825,472 Q815,410 795,350" stroke="#4A3728" stroke-width="6" fill="none" />
+    <path d="M835,472 Q845,390 855,310" stroke="#3B2B1E" stroke-width="6" fill="none" />
+    <!-- Layered Realistic Green Leaves -->
+    <g fill="#1F471C">
+      <ellipse cx="775" cy="360" rx="28" ry="16" transform="rotate(-25 775 360)" />
+      <ellipse cx="815" cy="385" rx="32" ry="18" transform="rotate(15 815 385)" />
+      <ellipse cx="860" cy="370" rx="30" ry="17" transform="rotate(30 860 370)" />
+      <ellipse cx="790" cy="305" rx="28" ry="15" transform="rotate(-35 790 305)" />
+      <ellipse cx="845" cy="275" rx="30" ry="16" transform="rotate(-15 845 275)" />
+      <ellipse cx="875" cy="315" rx="28" ry="15" transform="rotate(25 875 315)" />
+    </g>
+    <g fill="#2E6428">
+      <ellipse cx="735" cy="398" rx="26" ry="14" transform="rotate(-30 735 398)" />
+      <ellipse cx="765" cy="325" rx="27" ry="15" transform="rotate(-20 765 325)" />
+      <ellipse cx="820" cy="335" rx="30" ry="16" transform="rotate(10 820 335)" />
+      <ellipse cx="835" cy="235" rx="25" ry="14" transform="rotate(-40 835 235)" />
+      <ellipse cx="868" cy="255" rx="26" ry="14" transform="rotate(20 868 255)" />
+      <ellipse cx="888" cy="355" rx="25" ry="14" transform="rotate(35 888 355)" />
+      <ellipse cx="845" cy="415" rx="28" ry="15" transform="rotate(18 845 415)" />
+    </g>
+    <g fill="#45853B">
+      <ellipse cx="752" cy="350" rx="22" ry="12" transform="rotate(-18 752 350)" />
+      <ellipse cx="805" cy="285" rx="24" ry="13" transform="rotate(-12 805 285)" />
+      <ellipse cx="848" cy="302" rx="24" ry="13" transform="rotate(15 848 302)" />
+      <ellipse cx="818" cy="202" rx="20" ry="11" transform="rotate(-55 818 202)" />
+      <ellipse cx="852" cy="215" rx="22" ry="11" transform="rotate(-20 852 215)" />
+      <ellipse cx="792" cy="412" rx="24" ry="12" transform="rotate(-25 792 412)" />
+      <ellipse cx="878" cy="402" rx="22" ry="12" transform="rotate(28 878 402)" />
+    </g>
+  </g>
+
+  <!-- 7. Black Executive Chair Backrest Behind Developer -->
+  <path d="M352,585 C352,535 390,512 488,512 C586,512 624,535 624,585 L632,690 L344,690 Z" fill="#1B1E24" stroke="#2D3139" stroke-width="4" filter="url(#dropShadow)" />
+
+  <!-- 8. Developer Portrait: Hout Dara (ហួត ដារ៉ា) -->
+  <g filter="url(#dropShadow)">
+    <!-- Right Forearm Resting on Desk (Viewer's Left of Laptop) -->
+    <path d="M312,670 C292,708 286,755 292,792 L342,792 L346,675 Z" fill="url(#neckSkin)" />
+
+    <!-- Torso & Shoulders in Heather Grey Polo Shirt -->
+    <path d="M308,682 C320,602 365,574 482,574 C598,574 636,604 650,685 L642,740 L312,740 Z" fill="url(#poloFabric)" />
+
+    <!-- Subtle Fabric Folds on Polo Shoulders & Chest -->
+    <path d="M355,610 Q380,655 368,700" stroke="#7A7F87" stroke-width="3" fill="none" opacity="0.65" />
+    <path d="M602,608 Q580,655 592,700" stroke="#7A7F87" stroke-width="3" fill="none" opacity="0.65" />
+    <path d="M312,665 L344,678" stroke="#6E737B" stroke-width="3" fill="none" />
+
+    <!-- Neck & Shadow Under Chin -->
+    <path d="M438,498 L530,498 L542,605 L484,648 L426,605 Z" fill="url(#neckSkin)" />
+    <path d="M442,515 Q484,548 526,515 L526,542 Q484,568 442,542 Z" fill="#9E5E3B" opacity="0.48" />
+    <!-- Subtle Collarbone / Sternocleidomastoid Shading -->
+    <path d="M452,550 L476,625" stroke="#A66743" stroke-width="4" fill="none" opacity="0.45" />
+    <path d="M516,550 L492,625" stroke="#A66743" stroke-width="4" fill="none" opacity="0.45" />
+
+    <!-- Grey Polo Shirt Collar & Placket -->
+    <path d="M424,552 L484,642 L484,675 L456,675 L412,592 Z" fill="#878C94" />
+    <path d="M544,552 L484,642 L484,675 L512,675 L556,592 Z" fill="#7D828A" />
+    <!-- Left & Right Spread Polo Collar Points -->
+    <polygon points="426,546 476,626 428,638 398,582" fill="url(#poloCollarGrad)" stroke="#737880" stroke-width="1.5" />
+    <polygon points="542,546 492,626 538,638 568,582" fill="url(#poloCollarGrad)" stroke="#737880" stroke-width="1.5" />
+    <!-- Placket Button -->
+    <circle cx="485" cy="648" r="3.5" fill="#374151" />
+
+    <!-- Ears -->
+    <path d="M425,436 C413,434 409,452 414,472 C418,488 424,494 432,492 Z" fill="#C98860" />
+    <path d="M418,448 Q415,464 423,480" stroke="#9F5F3C" stroke-width="2.5" fill="none" />
+    <path d="M549,436 C561,434 565,452 560,472 C556,488 550,494 542,492 Z" fill="#C28159" />
+    <path d="M556,448 Q559,464 551,480" stroke="#9A5A37" stroke-width="2.5" fill="none" />
+
+    <!-- Head & Facial Structure -->
+    <path d="M426,385 C426,338 452,320 487,320 C522,320 548,338 548,385 L546,464 C545,498 522,535 487,536 C452,535 429,498 428,464 Z" fill="url(#faceSkin)" />
+
+    <!-- Subtle Cheekbone & Jawline Contouring -->
+    <path d="M432,462 Q445,515 487,533 Q529,515 542,462" stroke="#AD6C46" stroke-width="2" fill="none" opacity="0.55" />
+    <ellipse cx="452" cy="458" rx="16" ry="12" fill="#EBB998" opacity="0.28" />
+    <ellipse cx="522" cy="458" rx="16" ry="12" fill="#EBB998" opacity="0.25" />
+
+    <!-- Natural Eyebrows -->
+    <path d="M441,406 Q458,399 475,405" stroke="#1E1B1A" stroke-width="5.5" stroke-linecap="round" fill="none" />
+    <path d="M499,405 Q516,399 533,406" stroke="#1E1B1A" stroke-width="5.5" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes (Almond-shaped with natural eyelids and catchlights) -->
+    <!-- Left Eye (Viewer's Left) -->
+    <path d="M446,424 Q460,416 472,424 Q460,430 446,424 Z" fill="#F8FAFC" />
+    <circle cx="459" cy="423" r="5.5" fill="#231610" />
+    <circle cx="459" cy="423" r="2.5" fill="#090A0F" />
+    <circle cx="461" cy="421.5" r="1.4" fill="#FFFFFF" />
+    <path d="M444,423 Q459,414 473,423" stroke="#2B1D16" stroke-width="2.2" fill="none" stroke-linecap="round" />
+
+    <!-- Right Eye (Viewer's Right) -->
+    <path d="M501,424 Q514,416 528,424 Q514,430 501,424 Z" fill="#F8FAFC" />
+    <circle cx="514" cy="423" r="5.5" fill="#231610" />
+    <circle cx="514" cy="423" r="2.5" fill="#090A0F" />
+    <circle cx="516" cy="421.5" r="1.4" fill="#FFFFFF" />
+    <path d="M500,423 Q514,414 529,423" stroke="#2B1D16" stroke-width="2.2" fill="none" stroke-linecap="round" />
+
+    <!-- Nose Bridge, Nostrils & Highlight -->
+    <path d="M484,418 L481,458" stroke="#B87650" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M488,422 L487,458" stroke="#F0C4A6" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.65" />
+    <path d="M472,463 Q478,470 487,470 Q496,470 502,463" stroke="#A66540" stroke-width="2.8" fill="none" stroke-linecap="round" />
+    <ellipse cx="479" cy="466" rx="4" ry="2.2" fill="#7D4527" opacity="0.65" />
+    <ellipse cx="495" cy="466" rx="4" ry="2.2" fill="#7D4527" opacity="0.65" />
+
+    <!-- Philtrum & Natural Lips with Composed Warm Expression -->
+    <path d="M484,471 L483,484 M490,471 L491,484" stroke="#B87650" stroke-width="1.5" opacity="0.5" />
+    <!-- Upper Lip -->
+    <path d="M464,492 Q476,485 487,488 Q498,485 510,492 Q487,496 464,492 Z" fill="#B56C5B" />
+    <!-- Lower Lip -->
+    <path d="M465,492 Q487,496 509,492 Q499,504 487,504 Q475,504 465,492 Z" fill="#CB8171" />
+    <!-- Center Lip Line -->
+    <path d="M463,492 Q487,496 511,492" stroke="#8F4B3B" stroke-width="1.8" fill="none" stroke-linecap="round" />
+    <!-- Subtle Chin Highlight & Shadow -->
+    <path d="M476,512 Q487,516 498,512" stroke="#AD6C46" stroke-width="2" fill="none" opacity="0.5" />
+
+    <!-- Rectangular Eyeglasses with Signature Blue-Violet Anti-Glare Reflection -->
+    <g>
+      <!-- Left Lens (Viewer's Left) -->
+      <rect x="434" y="408" width="46" height="31" rx="6" fill="url(#lensGlareLeft)" stroke="#23252C" stroke-width="3.2" />
+      <!-- Right Lens (Viewer's Right) with Bright Blue-Violet Screen Reflection -->
+      <rect x="494" y="408" width="46" height="31" rx="6" fill="url(#lensGlareRight)" stroke="#23252C" stroke-width="3.2" />
+      <!-- Anti-Glare Window/Screen Glint Inside Right Lens -->
+      <polygon points="502,413 522,412 518,426 499,427" fill="#A5B4FC" opacity="0.48" />
+      <polygon points="442,414 454,413 451,424 440,425" fill="#93C5FD" opacity="0.32" />
+      <!-- Bridge & Nose Pads -->
+      <path d="M480,418 Q487,415 494,418" stroke="#333640" stroke-width="3" fill="none" />
+      <!-- Temple Arms -->
+      <line x1="425" y1="418" x2="434" y2="416" stroke="#23252C" stroke-width="3" />
+      <line x1="540" y1="416" x2="549" y2="418" stroke="#23252C" stroke-width="3" />
+    </g>
+
+    <!-- Short Neat Black Hair (Parted on Left, Swept Across Forehead) -->
+    <path d="M425,428 C419,388 424,344 448,325 C468,310 512,310 534,328 C554,344 557,385 549,428 C547,396 541,372 526,360 C505,358 476,368 450,378 C436,384 429,404 425,428 Z" fill="#17181C" />
+    <!-- Natural Hair Strands Texture Across Forehead -->
+    <path d="M445,355 Q482,345 522,358" stroke="#2A2C33" stroke-width="3" fill="none" opacity="0.7" />
+    <path d="M452,374 Q485,365 516,362" stroke="#111215" stroke-width="3.5" fill="none" />
+  </g>
+
+  <!-- 9. Foreground Executive Walnut Desk Surface -->
+  <g>
+    <polygon points="0,775 900,765 900,1200 0,1200" fill="url(#deskSurface)" />
+    <!-- Subtle Warm Reflection Under Laptop -->
+    <ellipse cx="495" cy="965" rx="220" ry="70" fill="url(#deskReflection)" />
+    <!-- Desk Top Edge Highlight -->
+    <line x1="0" y1="775" x2="900" y2="765" stroke="#7A5032" stroke-width="2.5" />
+  </g>
+
+  <!-- 10. Center Space-Grey Acer Laptop & Cream Charging Cable -->
+  <g filter="url(#dropShadow)">
+    <!-- Laptop Lid Back (Trapezoid) -->
+    <polygon points="320,656 670,652 658,885 332,885" fill="url(#acerLid)" stroke="#8F939B" stroke-width="1.5" />
+    <!-- Acer Metallic Logo at Upper Center -->
+    <text x="495" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" font-style="italic" fill="#23262C" letter-spacing="0.5">acer</text>
+    <!-- Right Port Connector -->
+    <rect x="658" y="852" width="12" height="8" rx="2" fill="#1E293B" />
+    <!-- Cream-White Cable Curving in Front of Laptop -->
+    <path d="M254,832 C310,872 345,896 425,896 C505,896 545,882 595,886 C645,890 675,892 692,865 C705,845 692,795 672,772" stroke="#E5DAC3" stroke-width="5" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 11. Left Black Office Inkjet Printer with White Paper & Power Cord -->
+  <g filter="url(#dropShadow)">
+    <!-- Rear Paper Tray & White A4 Sheets -->
+    <polygon points="22,638 175,635 186,705 18,708" fill="#D8DDE6" opacity="0.88" />
+    <polygon points="32,642 168,640 178,705 26,705" fill="#F8FAFC" />
+    <!-- Printer Main Chassis (3D Perspective) -->
+    <polygon points="0,695 224,695 282,662 282,855 224,912 0,912" fill="#1A1D23" />
+    <polygon points="224,695 282,662 282,855 224,912" fill="#272B33" />
+    <!-- Top Scanner Lid Bevel -->
+    <polygon points="0,695 224,695 282,662 65,662" fill="#323741" />
+    <!-- Blue Paper Guide Accent -->
+    <rect x="82" y="742" width="48" height="6" rx="2" fill="#2563EB" />
+    <!-- Rear Power Socket & Thick Black Cord Going Down Desk -->
+    <rect x="222" y="855" width="22" height="32" rx="3" fill="#0F1115" stroke="#374151" stroke-width="1" />
+    <path d="M233,872 Q195,1010 148,1200" stroke="#111318" stroke-width="6.5" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- 12. Bottom-Left White Ceramic Plant Pot with Green Foliage -->
+  <g filter="url(#dropShadow)">
+    <!-- Glossy White Pot -->
+    <path d="M0,868 L98,868 C96,945 86,998 72,1022 L0,1022 Z" fill="#F1F3F5" />
+    <ellipse cx="48" cy="868" rx="50" ry="12" fill="#CBD5E1" />
+    <!-- Vibrant Green Leaves -->
+    <path d="M18,868 C5,815 12,775 24,745 C32,780 34,825 28,868 Z" fill="#2D6A26" />
+    <path d="M35,868 C32,805 48,760 65,738 C64,782 56,825 46,868 Z" fill="#46893B" />
+    <path d="M52,868 C68,815 92,785 112,772 C95,808 76,842 62,868 Z" fill="#387830" />
+    <path d="M8,868 C-10,825 2,790 15,770 C18,805 18,840 14,868 Z" fill="#589E4B" />
+    <path d="M44,868 C56,832 82,818 104,815 C82,838 64,855 50,868 Z" fill="#65B056" />
+  </g>
+
+  <!-- 13. Right Adjustable Silver Aluminum Tablet Stand -->
+  <g filter="url(#dropShadow)">
+    <!-- Angled Top Plate with Cutouts -->
+    <polygon points="782,638 900,632 900,762 706,772" fill="#9FA5AE" stroke="#CBD5E1" stroke-width="2" />
+    <polygon points="782,638 706,772 698,768 774,634" fill="#2563EB" />
+    <polygon points="788,658 886,654 848,735 748,740" fill="#1F3A52" />
+    <!-- Aluminum Support Legs -->
+    <polygon points="762,755 778,755 835,848 818,852" fill="#949BA4" stroke="#CBD5E1" stroke-width="1.5" />
+    <polygon points="852,748 868,748 900,802 900,825" fill="#7D848D" />
+    <!-- Stand Base Plate on Desk -->
+    <polygon points="785,848 900,842 900,872 802,876" fill="#888F98" stroke="#B4BCC6" stroke-width="1.5" />
+  </g>
+
+  <!-- 14. Foreground Bottom-Right Black Chair Corner -->
+  <g filter="url(#dropShadow)">
+    <polygon points="792,868 900,918 900,1200 832,1200" fill="#14161B" />
+    <line x1="795" y1="872" x2="900" y2="922" stroke="#64748B" stroke-width="4" />
+    <line x1="812" y1="985" x2="900" y2="1045" stroke="#94A3B8" stroke-width="6" />
+  </g>
+</svg>
