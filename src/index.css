@@ -234,8 +234,14 @@
   background-color: rgba(16, 185, 129, 0.2) !important;
 }
 
-.dark .bg-blue-50 {
+.dark .bg-blue-50,
+.dark .bg-blue-50\/90,
+.dark .bg-blue-100 {
   background-color: rgba(59, 130, 246, 0.22) !important;
+}
+
+.dark .hover\:bg-blue-50:hover {
+  background-color: rgba(59, 130, 246, 0.3) !important;
 }
 
 /* Hover Background States in Dark Mode (Prevents light flash on hover) */
